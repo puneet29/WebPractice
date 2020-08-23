@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+    <h2>Register</h2>
+    <form>
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" name='first_name' id='first_name' placeholder="John" required>
+            <label for="second_name">Second Name:</label>
+            <input type="text" name="second_name" id="second_name" placeholder="Smith" required>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id='male' name='sex' value="male" required>
+            <label for="female">Female</label>
+            <input type="radio" id='female' name='sex' value="female" required>
+            <label for="other">Other</label>
+            <input type="radio" id='other' name='sex' value="other" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" minlength="5" required>
+        </div>
+        <div>
+            <label for="month">Birthday:</label>
+            <select name="month" id="month" required>
+                <option value="">Month</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+            </select>
+            <select name="day" id="day" aria-placeholder="day" required>
+                <option value="">Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+            </select>
+            <select name="year" id="year" required>
+                <option value="">Year</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+            </select>
+        </div>
+        <div>
+            <label for="licence">I agree to the terms and conditions</label>
+            <input type="checkbox" name='licence' required>
+        </div>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
