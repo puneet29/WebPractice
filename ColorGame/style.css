@@ -1,0 +1,91 @@
+#header {
+    background: #3581b8;
+    color: white;
+}
+
+h1.display-5 {
+    font-weight: 300;
+}
+
+h1.display-4 {
+    font-weight: 400;
+}
+
+#toolbar {
+    background: #f3f8f2;
+    color: #3581b8;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#toolbar div div {
+    width: 10rem;
+    margin: 0 0.5rem;
+}
+
+a.selected {
+    background: #3581b8;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: #2f2d2e;
+}
+
+.swatch {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 1.5rem;
+    border: 0;
+    padding: 0 0;
+}
+
+#colors-section {
+    margin: 1rem 0;
+}
+
+#colors-section div {
+    margin: 0.5rem 1rem;
+}
+
+#colors-section div div button.show {
+    display: flex!important;
+}
+
+#colors-section div div button.hide {
+    display: none!important;
+}
+
+#colors-section div div button.invisible {
+    visibility: hidden!important;
+}
+
+#toast {
+    color: #3581b8;
+}
+
+@media (max-width: 576px) {
+    .swatch {
+        height: 5.5rem;
+        width: 5.5rem;
+        border-radius: 0.8rem;
+        border: 0;
+        padding: 0 0;
+    }
+    #colors-section div {
+        margin: 0rem 0.5rem;
+    }
+    #toolbar {
+        font-size: 0.8rem;
+    }
+    h1.display-5 {
+        font-size: 1.75rem;
+    }
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+}
