@@ -1,6 +1,9 @@
 #header {
     background: #3581b8;
     color: white;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
 }
 
 h1.display-5 {
@@ -21,6 +24,9 @@ h1.display-4 {
 #toolbar div div {
     width: 10rem;
     margin: 0 0.5rem;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
 }
 
 a.selected {
@@ -42,6 +48,9 @@ body {
     border-radius: 1.5rem;
     border: 0;
     padding: 0 0;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
 }
 
 #colors-section {
@@ -62,6 +71,9 @@ body {
 
 #colors-section div div button.invisible {
     visibility: hidden!important;
+    transition: display 0.6s;
+    -webkit-transition: display 0.6s;
+    -moz-transition: display 0.6s;
 }
 
 #toast {

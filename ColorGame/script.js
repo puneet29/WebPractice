@@ -68,8 +68,8 @@ function swatchClicked(event) {
             toast.innerHTML = 'Correct!';
             header.style.background = color_label.innerHTML.toLowerCase();
             for (let i = 0; i < swatches.length; i++) {
-                swatches[i].classList.remove('invisible');
                 swatches[i].style.background = color_label.innerHTML.toLowerCase();
+                swatches[i].classList.remove('invisible');
             }
             gameEnd = true;
         }
