@@ -102,3 +102,8 @@ i.fa-trash-alt.hide {
     border: 3px solid #2980b9;
     outline: none;
 }
+
+.completed {
+    color: #7a7a7a;
+    text-decoration: line-through;
+}

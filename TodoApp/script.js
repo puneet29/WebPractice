@@ -13,30 +13,30 @@ $('#add-textbox').on('keypress', function (event) {
         $('.list').append(element);
         $(this).val('');
         $('.list .row li').last().text(val);
-
-        addRowListeners();
     }
 });
 
 function addRowListeners() {
-    $('.list .row').last().on('mouseover', function () {
+    $('.list').on('mouseover', '.row', function () {
         let delete_btn = $(this).find('i');
         delete_btn.removeClass('hide');
     });
 
-    $('.list .row').last().on('mouseout', function () {
+    $('.list').on('mouseout', '.row', function () {
         let delete_btn = $(this).find('i');
         delete_btn.addClass('hide');
     });
 
-    $('.fa-trash-alt').last().on('click', function () {
+    $('.list').on('click', '.fa-trash-alt', function () {
         $(this).parent().parent().fadeOut(500, function () {
             $(this).remove();
         });
         event.stopPropagation();
     });
 
-    $('.list .row li').last().on('click', function () {
-        $(this).css('text-decoration', 'line-through');
+    $('.list').on('click', '.row li', function () {
+        $(this).toggleClass('completed');
     });
 }
+
+addRowListeners();
